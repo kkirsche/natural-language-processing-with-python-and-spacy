@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nlp"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Kirsche <kevin.kirsche@one.verizon.com>"]
+readme = "README.md"
+packages = [{include = "nlp", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+spacy = "^3.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+bandit = "^1.7.4"
+black = "^22.8.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
